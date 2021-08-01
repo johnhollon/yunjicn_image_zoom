@@ -29,7 +29,7 @@ Supports:
 或者使用 `jsdelivr` (Or use `jsdelivr` cdn)：
 
 ``` html
-<script src="https://cdn.jsdelivr.net/gh/johnhollon/yunjicn_image_zoom/src/yunjicn_image_zoom.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/johnhollon/yunjicn_image_zoom@1.0.0/yunjicn_image_zoom.js"></script>
 ```
 
 使用脚本（Use the script）：
