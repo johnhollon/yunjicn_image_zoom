@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>示例</title>
+  <script src="./yunjicn_image_zoom.js"></script>
+  <style>
+    img {
+      max-width: 85%;
+      margin: 50px auto;
+    }
+
+  </style>
+</head>
+
+<body>
+  <img id="testImage" src="http://www.cnsa.gov.cn/n6758823/n6758842/c6810573/part/6785366.jpg">
+  <img id="testImage-1" src="http://www.cnsa.gov.cn/n6758823/n6758842/c6810761/part/6785504.jpg">
+
+  <script>
+    yunjicn_image_zoom.init({
+      margin_h: 5,
+      margin_v: 5,
+      containerClasses: [
+        "no-print"
+      ]
+    });
+    document.getElementById("testImage").addEventListener("click", (event) => {
+      yunjicn_image_zoom.show(event.target.src);
+    });
+    document.getElementById("testImage-1").addEventListener("click", (event) => {
+      yunjicn_image_zoom.show(event.target.src);
+    });
+  </script>
+</body>
+
+</html>
